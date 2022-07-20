@@ -8,6 +8,7 @@ vim.call('plug#begin', 'c:/users/liza/appdata/local/nvim-data/plugged')
 --Plug 'pangloss/vim-javascript'
 --Plug 'leafgarland/typescript-vim'
 --Plug('yaegassy/coc-volar', {['do'] = 'npm install --frozen-lockfile'})
+Plug 'mattn/emmet-vim'
 Plug('prettier/vim-prettier', {
 	['do'] = 'yarn install --frozen-lockfile --production',
 	['for'] = {'javascript', 'typescript', 'css', 'scss', 'json', 'markdown', 'vue', 'yaml', 'html'}})
@@ -17,6 +18,7 @@ Plug 'morhetz/gruvbox'
 Plug 'overcache/NeoSolarized'
 
 -- Something
+Plug 'windwp/nvim-autopairs'
 Plug 'airblade/vim-gitgutter'
 Plug('glepnir/lspsaga.nvim', {['branch']='main'})
 Plug 'nvim-lualine/lualine.nvim'
