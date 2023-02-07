@@ -1,5 +1,6 @@
 local telescope = require('telescope')
 local actions = require('telescope.actions')
+local fb_actions = telescope.extensions.file_browser.actions
 
 telescope.setup({
   defaults = {
@@ -16,11 +17,8 @@ telescope.setup({
       grouped = true,
       hidden = true,
       mappings = {
-        ['i'] = {
-
-        },
         ['n'] = {
-
+          h = fb_actions.goto_parent_dir,
         },
       }
     },
@@ -33,3 +31,4 @@ local keymap = vim.keymap.set
 keymap('n', 'ff', '<cmd>Telescope file_browser<CR>')
 keymap('n', ';f', '<cmd>Telescope find_files<CR>')
 keymap('n', ';r', '<cmd>Telescope live_grep<CR>')
+keymap('n', ';e', '<cmd>Telescope diagnostics<CR>')
